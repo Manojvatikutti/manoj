@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#box1{
+    height: 350px;
+    width: 95%;
+    /* border: 2px solid red; */
+    margin: 20px auto;
+    display: flex;
+    background-color: #0BCEAF;
+}
+#img{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img>img{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+#info{
+    height:100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+#info>h3:first-child{
+    font-size: 27px;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+}
+#info>h1:nth-child(2){
+    font-size: 66px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 0 8px;
+    -webkit-text-stroke: 2px #ffffff;
+    color: #0BCEAF !important;
+}
+#info>h1:nth-child(3){
+    font-size: 38px;
+    font-family: "roboto",sans-serif;
+    color: #ffffff;
+}
+#box2{
+    /* border: 2px solid rebeccapurple; */
+}
+#box2>h1{
+    text-align: center;
+    -webkit-text-stroke: 1px #dee2e6;
+    color: #fff !important;
+    font-size: calc(2.125rem + 10.5vw);
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+}
+#box2>h2{
+    position: absolute;
+    top: 480px;
+    left: 510px;
+    font-size: 38px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: #0BCEAF;
+}
+#imgb2>img{
+    height: 450px;
+    width: 450px;
+    padding: 0 20px;
+    border-radius: 50px;
+}
+#b2content{
+    width: 95%;
+    height: 460px;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#infob2{
+    padding: 0 25px;
+}
+#infob2>h2{
+    font-size: 27px;
+    font-family: "Roboto", sans-serif;
+    padding: 0 0 24px;
+}
+#infob2>p{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: #6C757D;
+    margin: 0 0 16px;
+    text-align: justify;
+    line-height: 1.3;
+}
+#aboutinfo>p{
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 0 8px;
+    padding: 8px 0;
+}
+#box3{
+    height: auto;
+    width: 95%;
+    margin: 0px auto;
+    /* border: 2px solid red; */
+    position: relative;
+}
+#box3>h1{
+    -webkit-text-stroke: 1px #dee2e6;
+    color: #fff !important;
+    font-size: calc(2.125rem + 10.5vw);
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+#box3>h2{
+    position: absolute;
+    top: 95px;
+    left: 510px;
+    font-size: 38px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: #0BCEAF;
+}
+#education{
+    width: 70%;
+    margin: 20px auto ;
+}
+#education>h3{
+    font-size: 27px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 0 24px;
+    color: #343a40;
+}
+#education h5{
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    margin: 0 0 8px;
+    color: #343a40;
+}
+#education h5::before{
+    content: "\f192";
+    color: #0BCEAF !important;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-size: 17px;
+    position: relative;
+    right: 20px;
+}
+#education h6{
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+    text-align: left;
+    margin: 0 0 8px;
+    padding-left: 50px ;
+}
+#institute p{
+    margin: 0 0 16px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+    text-align: justify;
+    padding-left: 50px ;
+}
+#institute{
+    padding-left: 30px;
+}
+#skills{
+    /* border: 2px solid green; */
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+#skills>h1{
+    -webkit-text-stroke: 1px #dee2e6;
+    color: #fff !important;
+    font-size: calc(2.125rem + 10.5vw);
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+#skills>h2{
+    position: absolute;
+    top: 95px;
+    left: 510px;
+    font-size: 38px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    color: #0BCEAF;
+}
+#html{
+    width: 450px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#html+div{
+    height: 25px;
+    width: 450px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 0 20px;
+    background-color: red;
+    background-image: url(green.png);
+    background-size: 95% 100%;
+    background-repeat: no-repeat;
+    animation-name: ahtml;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes ahtml{
+    0%{
+        background-size: 0%;
+    }
+    100%{
+        background-size: 95%;
+    }
+}
+#css{
+    width: 450px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#css+div{
+    height: 25px;
+    width: 450px;
+    background-image: url(green.png);
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 0 20px;
+    background-color: red;
+    animation-name: acss;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes acss{
+    0%{
+        background-size: 0%;
+    }
+    100%{
+        background-size: 90%;
+    }
+}
+#java{
+    width: 450px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#java+div{
+    height: 25px;
+    width: 450px;
+   background-image: url(green.png);
+   background-size: 90% 100%;
+   background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 0 0 20px;
+    background-color: red;
+    animation-name: ajava;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+@keyframes ajava{
+    0%{
+        background-size: 0%;
+    }
+    100%{
+        background-size: 90%;
+    }
+}
+#bars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#bars b{
+    font-size: 20px;
+}
+footer{
+    width: 95%;
+    height: 100px;
+    background-color: #0BCEAF;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#social{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 45px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
