@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+</head>
+<Style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #box1{
+        height: 350px;
+        width: 95%;
+        /* border: 2px solid red; */
+        margin: 20px auto;
+        display: flex;
+        background-color: #0BCEAF;
+    }
+    #img{
+        height: 100%;
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #img>img{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+    #info{
+        height:100%;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    #info>h3:first-child{
+        font-size: 27px;
+        font-family: "Roboto", sans-serif;
+        color: #ffffff;
+    }
+    #info>h1:nth-child(2){
+        font-size: 66px;
+        font-family: "Roboto", sans-serif;
+        margin: 0 0 8px;
+        -webkit-text-stroke: 2px #ffffff;
+        color: #0BCEAF !important;
+    }
+    #info>h1:nth-child(3){
+        font-size: 38px;
+        font-family: "roboto",sans-serif;
+        color: #ffffff;
+    }
+    #box2{
+        /* border: 2px solid rebeccapurple; */
+    }
+    #box2>h1{
+        text-align: center;
+        -webkit-text-stroke: 1px #dee2e6;
+        color: #fff !important;
+        font-size: calc(2.125rem + 10.5vw);
+        font-weight: 900;
+        font-family: "Roboto", sans-serif;
+    }
+    #box2>h2{
+        position: absolute;
+        top: 480px;
+        left: 510px;
+        font-size: 38px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        color: #0BCEAF;
+    }
+    #imgb2>img{
+        height: 450px;
+        width: 450px;
+        padding: 0 20px;
+        border-radius: 50px;
+    }
+    #b2content{
+        width: 95%;
+        height: 460px;
+        /* border: 2px solid red; */
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #infob2{
+        padding: 0 25px;
+    }
+    #infob2>h2{
+        font-size: 27px;
+        font-family: "Roboto", sans-serif;
+        padding: 0 0 24px;
+    }
+    #infob2>p{
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        color: #6C757D;
+        margin: 0 0 16px;
+        text-align: justify;
+        line-height: 1.3;
+    }
+    #aboutinfo>p{
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        margin: 0 0 8px;
+        padding: 8px 0;
+    }
+    #box3{
+        height: auto;
+        width: 95%;
+        margin: 0px auto;
+        /* border: 2px solid red; */
+        position: relative;
+    }
+    #box3>h1{
+        -webkit-text-stroke: 1px #dee2e6;
+        color: #fff !important;
+        font-size: calc(2.125rem + 10.5vw);
+        font-weight: 900;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+    }
+    #box3>h2{
+        position: absolute;
+        top: 95px;
+        left: 510px;
+        font-size: 38px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        color: #0BCEAF;
+    }
+    #education{
+        width: 70%;
+        margin: 20px auto ;
+    }
+    #education>h3{
+        font-size: 27px;
+        font-family: "Roboto", sans-serif;
+        margin: 0 0 24px;
+        color: #343a40;
+    }
+    #education h5{
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
+        margin: 0 0 8px;
+        color: #343a40;
+    }
+    #education h5::before{
+        content: "\f192";
+        color: #0BCEAF !important;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 400;
+        font-size: 17px;
+        position: relative;
+        right: 20px;
+    }
+    #education h6{
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #6c757d;
+        text-align: left;
+        margin: 0 0 8px;
+        padding-left: 50px ;
+    }
+    #institute p{
+        margin: 0 0 16px;
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #6c757d;
+        text-align: justify;
+        padding-left: 50px ;
+    }
+    #institute{
+        padding-left: 30px;
+    }
+    #skills{
+        /* border: 2px solid green; */
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+    }
+    #skills>h1{
+        -webkit-text-stroke: 1px #dee2e6;
+        color: #fff !important;
+        font-size: calc(2.125rem + 10.5vw);
+        font-weight: 900;
+        font-family: "Roboto", sans-serif;
+        text-align: center;
+    }
+    #skills>h2{
+        position: absolute;
+        top: 95px;
+        left: 510px;
+        font-size: 38px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        color: #0BCEAF;
+    }
+    #html{
+        width: 450px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #html+div{
+        height: 25px;
+        width: 450px;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 0 0 20px;
+        background-color: red;
+        background-image: url(green.png);
+        background-size: 95% 100%;
+        background-repeat: no-repeat;
+        animation-name: ahtml;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+    }
+    @keyframes ahtml{
+        0%{
+            background-size: 0%;
+        }
+        100%{
+            background-size: 95%;
+        }
+    }
+    #css{
+        width: 450px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #css+div{
+        height: 25px;
+        width: 450px;
+        background-image: url(green.png);
+        background-size: 90% 100%;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 0 0 20px;
+        background-color: red;
+        animation-name: acss;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+    }
+    @keyframes acss{
+        0%{
+            background-size: 0%;
+        }
+        100%{
+            background-size: 90%;
+        }
+    }
+    #java{
+        width: 450px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #java+div{
+        height: 25px;
+        width: 450px;
+       background-image: url(green.png);
+       background-size: 90% 100%;
+       background-repeat: no-repeat;
+        border-radius: 10px;
+        border: 1px solid black;
+        margin: 0 0 20px;
+        background-color: red;
+        animation-name: ajava;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-direction: normal;
+    }
+    @keyframes ajava{
+        0%{
+            background-size: 0%;
+        }
+        100%{
+            background-size: 90%;
+        }
+    }
+    #bars{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #bars b{
+        font-size: 20px;
+    }
+    footer{
+        width: 95%;
+        height: 100px;
+        background-color: #0BCEAF;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #social{
+        width: 45px;
+        height: 45px;
+        text-align: center;
+        border-radius: 45px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+</Style>
+<body>
+    <div id="box1">
+        <div id="img">
+            <img src="profileimg.jpg" alt="my profile img">
+        </div>
+        <div id="info">
+            <h3>I'm</h3>
+            <h1>Manoj V</h1>
+            <h1>Full Stack Developer</h1>
+        </div>
+    </div>
+    <div id="box2">
+        <h1>ABOUT</h1>
+        <h2>ABOUT ME</h2>
+        <div id="b2content">
+            <div id="imgb2">
+                <img src="profileimg.jpg" alt="profileimg">
+            </div>
+            <div id="infob2">
+                <h2>Full Stack Developer</h2>
+                <p>As a passionate full-stack developer, I possess strong skills in front-end and back-end development, proficient in technologies like HTML, CSS, JavaScript, and databases. I thrive in building user-centric, scalable web applications and enjoy solving challenging problems. With a commitment to continuous learning, I’m eager to contribute my skills to impactful projects. I am seeking an opportunity to grow and deliver value in a dynamic team environment.</p>
+                <div id="aboutinfo">
+                    <p><b>Name:</b> Manoj V</p>
+                    <p><b>Degree:</b> Master of Computer Application</p>
+                    <p><b>Phone:</b> +91 9980593320</p>
+                    <p><b>Email:</b> manojvattikuti2000@gmail.com</p>
+                    <p><b>Birthday:</b> 9 August 2000</p>
+                    <p><b>Address:</b> Davangere, Karnataka, India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="box3">
+        <h1>QUALITY</h1>
+        <h2>EDUCATION</h2>
+        <div id="education">
+            <h3>My Education</h3>
+            <div id="institute">
+                <h5>Master of Computer Application</h5>
+                <h6><b>Visvesvaraya Technological University (PESITM,Shimoga)</b> | 2023 - 2024</h6>
+                <p>I have completed my <b>Master’s degree in Computer Applications (MCA)</b> from PESITM College, Shimoga, with an aggregate of <b>84%</b>. This accomplishment reflects my dedication to academic excellence and passion. I am excited to apply my knowledge as a full-stack developer to innovative projects.I am excited to apply my knowledge as a full-stack developer to innovative projects.</p>
+
+                <h5>Bachelor of Computer Application</h5>
+                <h6><b>Davangere University (Nutan College, Davangere)</b> | 2019 - 2022</h6>
+                <p>I have completed my <b>Bachelor’s degree in Computer Applications (BCA)</b> from Nuthan Institute of Management Studies, Davangere, with an aggregate of <b>78%</b>. This academic journey has strengthened my foundational knowledge in computer science and programming.</p>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <h1>SKILLS</h1>
+        <h2>MY SKILLS</h2>
+        <div id="bars">
+            <div id="html">
+                <p><b>HTML</b></p>
+                <p><b>95%</b></p>
+            </div>
+
+            <div>
+            </div>
+            <div id="css">
+                <p><b>CSS</b></p>
+                <p><b>90%</b></p>
+            </div>
+            <div>
+            </div>
+            <div id="java">
+                <p><b>JAVA</b></p>
+                <p><b>90%</b></p>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+    <div id="box3">
+        <h1>PROJECT</h1>
+        <h2>PROJECTS</h2>
+        <div id="education">
+            <h3>My Projects</h3>
+            <div id="institute">
+                <h5>Artificaial Speaker for Deaf and Dumb People Using Their Murmuring Sound</h5>
+                <p>
+                    The project <b>"Artificial Speaker for Deaf and Dumb People Using Their Murmuring Sound"</b> focuses on creating an advanced communication tool that translates murmuring sounds into clear speech or text in real-time. Using technologies like <b>Convolutional Neural Networks (CNNs), Speech-to-Text (STT), and Text-to-Speech (TTS),</b> it ensures accurate sound interpretation and seamless user interaction. The system captures and processes murmurs through feature extraction and machine learning, delivering intuitive outputs via a user-friendly application compatible with multiple devices. It empowers deaf and mute individuals to communicate effectively, bridging the gap between them and the hearing population. By prioritizing security, personalization, and adaptability, this innovation aims to enhance accessibility, independence, and inclusivity, improving the quality of life for its users
+                </p>
+
+                <h5>Facial Age and Gender Estimation</h5>
+                <p>
+                    The <b>"Facial Age and Gender Estimation"</b> project focuses on developing a system that analyzes facial images to predict a person's age and gender accurately. Using advanced machine learning techniques like <b>Convolutional Neural Networks (CNNs),</b> the system extracts and processes features from facial images. Key steps include <b>image preprocessing, feature extraction, and classification,</b> where the model predicts age as a numerical value and gender as a binary classification. The system is designed to handle variations in lighting, pose, and expressions, ensuring robust and reliable performance. Applications include personalized marketing, security, and healthcare analytics.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a href="https://x.com/?lang=en"><i class="fab fa-twitter" id="social"></i></a>
+        <a href="www.linkedin.com/in/manoj-v-2159b9172"><i class="fab fa-linkedin-in" id="social"></i></a>
+        <a href="https://www.instagram.com/manojvattikuti/profilecard/?igsh=azM1NmxuOTg1aWRw"><i class="fab fa-instagram" id="social"></i></a>
+        <a href="https://www.facebook.com/manoj.vattikuti.5?mibextid=ZbWKwL"><i class="fab fa-facebook-f" id="social"></i></a>
+        <a href="https://github.com/Manojvatikutti"><i class="fab fa-github" id="social" style='font-size:25px'></i></a>
+    </footer>
+</body>
+</html>
